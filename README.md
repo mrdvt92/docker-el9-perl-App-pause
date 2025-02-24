@@ -2,7 +2,7 @@
 
 Docker based on AlmaLinux 9 to install Perl pause app from yum repository
 
-## Build image
+### Build image
 
 ```
 cp pause.conf private-pause.conf
@@ -10,13 +10,13 @@ vi private-pause.conf #update login and password
 make build
 ```
 
-# Run container
+### Run container
 
 ```
 make run
 ```
 
-# Run `bash` command prompt inside container
+### Run `bash` command prompt inside container
 
 ```
 make bash
