@@ -1,0 +1,4 @@
+#/usr/bin/sh
+IMAGE_NAME=local/perl_pause
+CONTAINER_NAME=perl_pause
+docker exec -it $CONTAINER_NAME pause $@

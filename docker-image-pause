@@ -1,0 +1,3 @@
+#/usr/bin/sh
+IMAGE_NAME=local/perl_pause
+docker run -it $IMAGE_NAME pause $@
