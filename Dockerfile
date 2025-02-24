@@ -6,6 +6,7 @@ RUN /usr/bin/crb enable
 RUN yum -y update
 RUN yum -y install perl-App-pause #v0.661-2
 
-COPY pause.conf /root
+COPY *pause.conf /root
+RUN if [ -e /root/private-pause.conf ] ; then cp /root/private-pause.conf /root/pause.conf ; fi
 
 CMD ["/usr/bin/cat"]
